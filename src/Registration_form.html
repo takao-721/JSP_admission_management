@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="templete.css" rel="stylesheet" type="text/css">
+    </head>
+
+
+    <body>
+        <div id="page">
+
+
+            <div id="header">
+                <div id="header_title"> <img src="images/sicsr_logo.png" width="70" height="70" alt="SICSR"></div>
+                <br><font size="50" color="red">Symbiosis International University</font>
+                <br><br>
+
+                <div id="headerimg">
+                    <center><img src="images/symbiosis2.jpg" width="1000" height="200" alt="SISIR"></center>
+                </div>
+            </div>
+
+            <div id="menu">
+                <ul class="menu_f01">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+
+                </ul>
+            </div>
+
+            <div id="contents">
+
+                <div id="main">
+                    <!--////////////////////////////内容書き込み//////////////////////////////////////////////////////////////// -->
+                    <!--//基本的にはメインの中に書き加えていく形で-->
+
+                    <form name="form" action="Registration_form.jsp">
+                        <center>
+                            <font color = "red" size="100">
+                            Registration Form
+                            </font>
+                            <hr color = "red" size = "5">
+                            <br>
+                            <!--value = "registr_data"-->
+                            Name: <input type="text" required maxlength="30" size="30" placeholder="Enter name here" name="name" ><br><br>
+                            Address: <textarea rows="5" cols="30" name="address" required></textarea><br><br>
+                            SID: <input type="number" name="SID" maxlength="5" required/><br><br>
+                            Interest :
+                            <input type = "radio" name="interest" value="information_engineering">Information Engineering
+                            <input type = "radio" name="interest" value="economic">Economic
+                            
+                            <br><br>
+                            Education :
+                            <select name="education">
+                                <option value="highschool">Highschool</option>
+                                <option value="underGradute">UnderGradute</option>
+                                <option value="graduates">Graduates</option>
+                            </select><br><br>
+                            Grade :
+                            <input type = "radio" name="grade" value="A+">A+
+                            <input type = "radio" name="grade" value="A">A
+                            <input type = "radio" name="grade" value="B">B
+                            <input type = "radio" name="grade" value="C">C
+                            <input type = "radio" name="grade" value="D">F
+                            <br><br>
+
+                            <input type="submit" value="Submit" style="width:140px; height:30px" class="square_btn">
+                        </center>
+                    </form>
+                    <br><br>
+<!--
+                    <a href="#" style="width:140px; height:20px" class="square_btn">New user</a>
+                    <br><br><br>
+    -->                
+
+                    <!--/////////////////////////ここまで///////////////////////////////////////////////////////////////////// -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
